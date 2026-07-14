@@ -1,6 +1,3 @@
-from itertools import product
-from unicodedata import category
-
 from sqlalchemy.orm import Session
 from typing import List
 from ..repositories.product_repository import ProsuctRepository

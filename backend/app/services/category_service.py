@@ -1,5 +1,3 @@
-from unicodedata import category
-
 from sqlalchemy.orm import Session
 from typing import List
 from ..repositories.category_repository import CategoryRepository
