@@ -35,9 +35,9 @@ class ProsuctRepository:
         return db_product
 
     def get_multiple_by_ids(self, product_ids: List[int]) -> List[Product]:
-        return(
+        return (
             self.db.query(Product)
             .options(joinedload(Product.category))
-            .filter(Product.id.in(product_ids))
+            .filter(Product.id.in_(product_ids))
             .all()
         )
